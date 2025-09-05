@@ -52,8 +52,11 @@ Suoritin alla olevan komennon Terminalissa:
 
 ### c) Etusivun uusiminen - uusi name based virtual host 
 Lähdin tässä tehtävässä luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan plvelimen etusivulla http://localhost/.
+
 Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
+
 * `sudoedit /etc/apache2/sites-available/starwars.conf´
+  
 * `cat /etc/apache2/sites-available/starwars.com.conf`
 <VirtualHost *:80>
  ServerName kilppari.com
@@ -63,7 +66,9 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
    Require all granted
  </Directory>
 </VirtualHost>
+
 * `sudo a2ensite kilppari.com`
+ 
 * `sudo systemctl restart apache2`
 
 Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
