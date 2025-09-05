@@ -7,8 +7,6 @@
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
 
 
-# x) Artikkeli
-
 ### Koneen tekniset tiedot
 * Prosessori: Intel Core i5-8265U CPU @ 1.60 GHz (1.80 GHz turbo, 8 ydintä)
 * RAM: 16 GB (15,7 GB käytettävissä)
@@ -16,6 +14,10 @@
 * Näytönohjain: Intel UHD Graphics 620
 * Tallennustila: 237 GB, josta 158 GB vapaana
 * DirectX-versio: DirectX 12
+
+
+# x) Artikkeli
+
 
 # a) Apache-weppipalvelimen testaus
 
