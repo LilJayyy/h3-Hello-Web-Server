@@ -33,6 +33,7 @@ Lokien analysoinnissa hyödynsin Heinosen (2025), Sumo logicin, sekä stack over
 
 Suoritin alla olevan komennon Terminalissa:
 * `sudo tail -f /var/log/apache2/access.log` komentorivi Terminaliin
+  
 ![loki](images/loki.png)
 
 ## Lokiriveissä havaitsin seuraavat asiat
@@ -68,19 +69,22 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
 
 ![sudoedit](images/sudedit.png)
+
 _Virhetilanne_
 
 Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 
 * `chmod ugo+x /home/liljas/publicsites/kilppari.com` -komennolla käyttäjien oli mahdollista päästä hakemistoon - joka näin ollen korjasi "Forbidden" tilanteen
  ![mo](images/mo.png)
+
 _chmod komento_
 
 * sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka ´curl -H 'Host: kilppari.com' localhost`-toimi. Lisäsin host-nimen loppuosaan ja tallensin vielä Ctrl + O ja Enter. On tärkeää huomioida, että tiedoston muokkaaminen vaatii root-oikeudet
 
 ![ec](images/ec.png)
 
-Tässä kohtaa kello olikin jo tovin (21:30), sillä jäin selvittelemään mistä vika voisi johtua. 
+Tässä kohtaa kello olikin jo tovin (21:30), sillä jäin selvittelemään mistä vika voisi johtua.
+
 ![cur](images/cur.png)
 _pyydetään koneen palvelimelta sivuston sisältö_
 
