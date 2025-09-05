@@ -1,10 +1,10 @@
-# h2 h3-Hello-Web-Server
+# h3-Hello-Web-Server
  
 ## Sisältö
 * [x) Artikkeli](#x-artikkeli)
-* [a) Apache-weppipalvelimen testaus](#a-Apache-weppipalvelimentestaus)
-* [b) Lokien analysointi](#b-Lokienanalysointi)
-* [c) Etusivun uusiminen - uusi name based virtual host](#c-Etusivunuusiminen-uusinamebasedvirtualhost)
+* [a) Apache-weppipalvelimen testaus](#a-apache-weppipalvelimen-testaus)
+* [b) Lokien analysointi](#b-lokien-analysointi)
+* [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
 
 
 ### x) Artikkeli
