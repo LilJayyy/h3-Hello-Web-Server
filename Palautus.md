@@ -101,8 +101,9 @@ Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 
 
 
-* sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka ´curl -H 'Host: kilppari.com' localhost`-toimi.
-  -Lisäsin host-nimen loppuosaan `127.0.0.1 kilppari.com www.kilppari.com´ ja tallensin vielä Ctrl + O ja Enter. On tärkeää huomioida, että tiedoston muokkaaminen vaatii root-oikeudet.
+* sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka `curl -H 'Host: kilppari.com' localhost`-toimi.
+  -Lisäsin host-nimen loppuosaan `127.0.0.1 kilppari.com www.kilppari.com´
+  -Tallensin vielä Ctrl + O ja Enter -tässä oli tärkeä huomioida, että root-oikeudet tarvittiin. (sudo nano)
 
 ![ec](images/ec.png)
 
