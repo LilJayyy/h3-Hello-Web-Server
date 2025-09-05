@@ -85,7 +85,7 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
 
 
- ![edd](images/edd.png)
+![for](images/for.png)
 
 
 _Virhetilanne_
@@ -99,7 +99,7 @@ Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 
 _chmod komento_
 
-* sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka ´curl -H 'Host: kilppari.com' localhost`-toimi. Lisäsin host-nimen loppuosaan ja tallensin vielä Ctrl + O ja Enter. On tärkeää huomioida, että tiedoston muokkaaminen vaatii root-oikeudet
+* sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka ´curl -H 'Host: kilppari.com' localhost`-toimi. Lisäsin host-nimen loppuosaan ´127.0.0.1 kilppari.com www.kilppari.com´ ja tallensin vielä Ctrl + O ja Enter. On tärkeää huomioida, että tiedoston muokkaaminen vaatii root-oikeudet.
 
 ![ec](images/ec.png)
 
