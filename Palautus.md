@@ -36,7 +36,7 @@ Suoritin alla olevan komennon Terminalissa:
   
 ![loki](images/loki.png)
 
-# Lokiriveissä havaitsin seuraavat asiat
+ **Lokiriveissä havaitsin seuraavat asiat**
 
 * **127.0.0.1** - IP-osoite (Client IP)
   
