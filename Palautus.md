@@ -7,7 +7,7 @@
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-Etusivunuusiminen-uusinamebasedvirtualhost)
 
 
-# Artikkeli
+### x) Artikkeli
 
 ## Koneen tekniset tiedot
 * Prosessori: Intel Core i5-8265U CPU @ 1.60 GHz (1.80 GHz turbo, 8 ydintä)
@@ -17,7 +17,7 @@
 * Tallennustila: 237 GB, josta 158 GB vapaana
 * DirectX-versio: DirectX 12
 
-# a) Apache-weppipalvelimen testaus
+### a) Apache-weppipalvelimen testaus
 
 Apache-webpalvelin oli keretty asentaa oppitunnilla. Siirryin 5.9.2025 kello 19.52 tehtävän ensimmäiseen vaiheeseen eli testaamaan että webpalvein vastaa localhost-osoitteesta.
 
@@ -28,7 +28,7 @@ Apache-webpalvelin oli keretty asentaa oppitunnilla. Siirryin 5.9.2025 kello 19.
 ![test](images/test.png)
 _Onnistunut testaus_ 
 
-# b) Lokien analysointi
+### b) Lokien analysointi
 Lokien analysoinnissa hyödynsin Heinosen (2025), Sumo logicin, sekä stack overflown ohjeita. Etenin seuraavasti:
 
 Suoritin alla olevan komennon Terminalissa:
@@ -49,7 +49,7 @@ Suoritin alla olevan komennon Terminalissa:
   
 *  **Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0** - loppukäyttäjän(end user) käyttämä selaintieto
 
-# c) Etusivun uusiminen - uusi name based virtual host 
+### c) Etusivun uusiminen - uusi name based virtual host 
 Lähdin tässä tehtävässä luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan plvelimen etusivulla http://localhost/.
 Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 * `sudoedit /etc/apache2/sites-available/starwars.conf´
