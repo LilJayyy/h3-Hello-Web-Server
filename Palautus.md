@@ -101,7 +101,7 @@ Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 
 
 
-* sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka `curl -H 'Host: kilppari.com' localhost`-toimi.
+* `sudo nano /etc/hosts/` - komennolla avasin tiedoston sillä selain näytti tyhjää. `curl -H 'Host: kilppari.com' localhost`- oli onneksi nyt responsiivinen.
   -Lisäsin host-nimen loppuosaan `127.0.0.1 kilppari.com www.kilppari.com´
   -Tallensin vielä Ctrl + O ja Enter -tässä oli tärkeä huomioida, että root-oikeudet tarvittiin. (sudo nano)
 
