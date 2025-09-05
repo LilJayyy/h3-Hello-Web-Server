@@ -90,10 +90,10 @@ Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: 
 ![for](images/for.png)
 
 
-
 **_Virhetilanne_**
 
-Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
+Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä. Tässä kohtaa kello olikin jo tovin (21:30), sillä jäin selvittelemään mistä vika voisi johtua.
+
 
 * `chmod ugo+x /home/liljas/publicsites/kilppari.com`
   
@@ -111,7 +111,6 @@ Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 ![ec](images/ec.png)
 
 
-Tässä kohtaa kello olikin jo tovin (21:30), sillä jäin selvittelemään mistä vika voisi johtua.
 
 ![cur](images/cur.png)
 _pyydetään koneen palvelimelta sivuston sisältö_
