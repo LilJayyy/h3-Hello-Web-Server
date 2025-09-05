@@ -28,6 +28,7 @@ Apache-webpalvelin oli keretty asentaa oppitunnilla. Siirryin 5.9.2025 kello 19.
 ![test](images/test.png)
 _Onnistunut testaus_ 
 
+
 ### b) Lokien analysointi
 Lokien analysoinnissa hyödynsin Heinosen (2025), Sumo logicin, sekä stack overflown ohjeita. Etenin seuraavasti:
 
@@ -49,6 +50,7 @@ Suoritin alla olevan komennon Terminalissa:
 *  **488** - Objektin koko joka palautui asiakkaalle / Object size returned to client
   
 *  **Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0** - loppukäyttäjän(end user) käyttämä selaintieto
+
 
 ### c) Etusivun uusiminen - uusi name based virtual host 
 Lähdin tässä tehtävässä luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan plvelimen etusivulla http://localhost/.
@@ -72,6 +74,7 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 * `sudo systemctl restart apache2`
 
 Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
+
 
 ![sudoedit](images/sudedit.png)
 
