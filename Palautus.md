@@ -1,0 +1,24 @@
+# h2 h3-Hello-Web-Server
+ 
+## Sisältö
+* [x) Artikkeli](#x-artikkeli)
+* [a) Micro-editorin asentaminen](#a-micro-editorin-asentaminen)
+* [b) APT - Kolmen uuden komentoriviohjelman asennus](#b-apt---kolmen-uuden-komentoriviohjelman-asennus)
+* [c) FHS - Kansioiden esittelyt](#c-fhs---kansioiden-esittelyt)
+* [d) The Friendly M. - grep esimerkit](#d-the-friendly-m---grep-esimerkit)
+* [e) Pipe - esimerkki putkista](#e-pipe---esimerkki-putkista)
+* [f) Koneen raudan listaus ja analyysi](#f-koneen-raudan-listaus-ja-analyysi)
+* [g) Lokirivien tulkinta ja analyysi](#g-lokirivien-tulkinta-ja-analyysi)
+* [h) Plugin asennus micro-editoriin ja testaus](#h-plugin-asennus-micro-editoriin-ja-testaus)
+
+# Artikkeli
+
+## Koneen tekniset tiedot
+* Prosessori: Intel Core i5-8265U CPU @ 1.60 GHz (1.80 GHz turbo, 8 ydintä)
+* RAM: 16 GB (15,7 GB käytettävissä)
+* Järjestelmä: Windows 11 Pro 64-bittinen (x64-suoritin)
+* Näytönohjain: Intel UHD Graphics 620
+* Tallennustila: 237 GB, josta 158 GB vapaana
+* DirectX-versio: DirectX 12
+
+# a) 
