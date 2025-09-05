@@ -53,7 +53,7 @@ Suoritin alla olevan komennon Terminalissa:
 
 
 ### c) Etusivun uusiminen - uusi name based virtual host 
-Lähdin tässä tehtävässä luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan plvelimen etusivulla http://localhost/.
+Lähdin tehtävänannon mukaisesti luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan palvelimen etusivulla (http://localhost/).
 
 Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 
@@ -76,7 +76,7 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
 
 
-![sudoedit](images/sudedit.png)
+![eddd](images/eddd.png)
 
 _Virhetilanne_
 
