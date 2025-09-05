@@ -7,9 +7,9 @@
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
 
 
-### x) Artikkeli
+# x) Artikkeli
 
-# Koneen tekniset tiedot
+### Koneen tekniset tiedot
 * Prosessori: Intel Core i5-8265U CPU @ 1.60 GHz (1.80 GHz turbo, 8 ydintä)
 * RAM: 16 GB (15,7 GB käytettävissä)
 * Järjestelmä: Windows 11 Pro 64-bittinen (x64-suoritin)
@@ -17,7 +17,7 @@
 * Tallennustila: 237 GB, josta 158 GB vapaana
 * DirectX-versio: DirectX 12
 
-### a) Apache-weppipalvelimen testaus
+# a) Apache-weppipalvelimen testaus
 
 Apache-webpalvelin oli keretty asentaa oppitunnilla. Siirryin 5.9.2025 kello 19.52 tehtävän ensimmäiseen vaiheeseen eli testaamaan että webpalvein vastaa localhost-osoitteesta.
 
@@ -30,7 +30,7 @@ Apache-webpalvelin oli keretty asentaa oppitunnilla. Siirryin 5.9.2025 kello 19.
 _Onnistunut testaus_ 
 
 
-### b) Lokien analysointi
+# b) Lokien analysointi
 Lokien analysoinnissa hyödynsin Heinosen (2025), Sumo logicin, sekä stack overflown ohjeita. Etenin seuraavasti:
 
 Suoritin alla olevan komennon Terminalissa:
@@ -53,7 +53,7 @@ Suoritin alla olevan komennon Terminalissa:
 *  **Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0** - loppukäyttäjän(end user) käyttämä selaintieto
 
 
-### c) Etusivun uusiminen - uusi name based virtual host 
+# c) Etusivun uusiminen - uusi name based virtual host 
 Lähdin tehtävänannon mukaisesti luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan palvelimen etusivulla (http://localhost/).
 
 Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
