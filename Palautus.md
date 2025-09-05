@@ -60,13 +60,21 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 * `sudoedit /etc/apache2/sites-available/starwars.conf´
   
 * `cat /etc/apache2/sites-available/starwars.com.conf`
+  
 <VirtualHost *:80>
+
  ServerName kilppari.com
+ 
  ServerAlias www.kilppari.com
+ 
  DocumentRoot /home/liljas/publicsites/kilppari.com
+ 
  <Directory /home/liljas/publicsites/kilppari.com>
+ 
    Require all granted
+   
  </Directory>
+ 
 </VirtualHost>
 
 * `sudo a2ensite kilppari.com`
@@ -76,7 +84,8 @@ Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
 Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
 
 
-![eddd](images/eddd.png)
+ ![edd](images/edd.png)
+
 
 _Virhetilanne_
 
