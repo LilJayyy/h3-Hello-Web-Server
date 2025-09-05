@@ -9,7 +9,7 @@
 
 ### x) Artikkeli
 
-## Koneen tekniset tiedot
+# Koneen tekniset tiedot
 * Prosessori: Intel Core i5-8265U CPU @ 1.60 GHz (1.80 GHz turbo, 8 ydintä)
 * RAM: 16 GB (15,7 GB käytettävissä)
 * Järjestelmä: Windows 11 Pro 64-bittinen (x64-suoritin)
