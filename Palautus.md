@@ -5,11 +5,7 @@
 * [a) Apache-weppipalvelimen testaus](#a-Apache-weppipalvelimentestaus)
 * [b) Lokien analysointi](#b-Lokienanalysointi)
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-Etusivunuusiminen-uusinamebasedvirtualhost)
-* [d) The Friendly M. - grep esimerkit](#d-the-friendly-m---grep-esimerkit)
-* [e) Pipe - esimerkki putkista](#e-pipe---esimerkki-putkista)
-* [f) Koneen raudan listaus ja analyysi](#f-koneen-raudan-listaus-ja-analyysi)
-* [g) Lokirivien tulkinta ja analyysi](#g-lokirivien-tulkinta-ja-analyysi)
-* [h) Plugin asennus micro-editoriin ja testaus](#h-plugin-asennus-micro-editoriin-ja-testaus)
+
 
 # Artikkeli
 
