@@ -90,7 +90,8 @@ Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: 
 ![for](images/for.png)
 
 
-_Virhetilanne_
+
+**_Virhetilanne_**
 
 Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 
