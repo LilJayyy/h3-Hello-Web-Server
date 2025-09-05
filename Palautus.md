@@ -26,6 +26,7 @@ Apache-webpalvelin oli keretty asentaa oppitunnilla. Siirryin 5.9.2025 kello 19.
   - Apache-webpavelin vastasi localhost osoitteesta ja käyttää oletuksena porttia 80.
 
 ![test](images/test.png)
+
 _Onnistunut testaus_ 
 
 
