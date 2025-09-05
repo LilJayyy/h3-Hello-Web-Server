@@ -92,6 +92,7 @@ _Virhetilanne_
 Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
 
 * `chmod ugo+x /home/liljas/publicsites/kilppari.com`
+  
   - komennolla käyttäjien oli mahdollista päästä hakemistoon - joka näin ollen korjasi "Forbidden" tilanteen
  ![mo](images/mo.png)
 
