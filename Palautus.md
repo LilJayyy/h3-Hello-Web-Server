@@ -99,7 +99,7 @@ Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä:
   - komennolla käyttäjien oli mahdollista päästä hakemistoon - joka näin ollen korjasi "Forbidden" tilanteen
  ![mo](images/mo.png)
 
-_chmod komento_
+
 
 * sudo nano ´/etc/hosts/´ komennolla avasin tiedoston sillä selain näytti tyhjää vaikka ´curl -H 'Host: kilppari.com' localhost`-toimi.
   -Lisäsin host-nimen loppuosaan `127.0.0.1 kilppari.com www.kilppari.com´ ja tallensin vielä Ctrl + O ja Enter. On tärkeää huomioida, että tiedoston muokkaaminen vaatii root-oikeudet.
