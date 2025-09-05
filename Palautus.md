@@ -117,6 +117,8 @@ Tässä kohtaa kello olikin jo tovin (21:30), sillä jäin selvittelemään mist
 _pyydetään koneen palvelimelta sivuston sisältö_
 
 **Lopputulos**
+
+
 Karvisen (2025) ohjeissa luki selkeästi "Vinkit" -osiossa kotisivu kielletty -(403 Forbidden) virhetilanteen korjaava komento. Toki tämä jäi huomaamatta - mutta sentään se tuli havaittua lopulta. 
 
 ![onn](images/onn.png)
