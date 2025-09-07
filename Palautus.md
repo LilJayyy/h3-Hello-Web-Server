@@ -59,7 +59,7 @@ Suoritin alla olevan komennon Terminalissa:
 
 Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (2009) ohjeita.
 
-1. Disabloidaan ensin vanha web-palvelin `kilppari.com`:
+1. Disabloidaan ensin vanha web-palvelin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä:
 
 - `sudo a2dissite kilppari.example.com`
 
