@@ -94,7 +94,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 **< p >** - Kappaleen vaihto
 
-![i](images/i.png)
+![p](images/p.png)
 
 - Lopuksi vielä ctrl + S ja ctrl + Q
   
