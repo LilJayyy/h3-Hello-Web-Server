@@ -97,7 +97,8 @@ Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä. T
 
 * `chmod ugo+x /home/liljas/publicsites/kilppari.com`
   
-  - komennolla käyttäjien oli mahdollista päästä hakemistoon - joka näin ollen korjasi "Forbidden" tilanteen
+Yllä oleva komento myöntää pääsyoikeuden hakemistoon, mikä näin ollen korjasi "Forbidden"-virhetilanteen
+
  ![mo](images/mo.png)
 
 
@@ -122,6 +123,11 @@ Karvisen (2025) ohjeissa luki selkeästi "Vinkit" -osiossa kotisivu kielletty -(
 
 ![onn](images/onn.png)
 _Onnistuminen_
+
+
+# e) Validin HTML5 -sivun luominen
+
+
 
 ## Lähteet
 Linuxize. 2023. Artikkeli. _Chown Command in Linux (File Ownership)_ Luettavissa: https://linuxize.com/post/linux-chown-command/ Luettu 05.09.2025
