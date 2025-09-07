@@ -94,7 +94,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 **< p >** - Kappaleen vaihto
 
-![p](images/p.png)
+![i](images/i.png)
 
 - Lopuksi vielä ctrl + S ja ctrl + Q
   
@@ -147,6 +147,36 @@ _Onnistunut uusi etusivu_
 
 # e) Validin HTML5 -sivun luominen
 
+Jatkoin raportin tekoa 7.9.2025 kello 17:30 aikaan. 
+
+Pääsin suht helpolla tässä tehtävänosassa, sillä löysin hyvän oppimateriaalin Jyväskylän yliopiston verkkosivuilta (2012) josta katsoin ohjeet oikeaoppisen HTML5-sivun sisällön tekoon.
+
+Validin HTML5 -sivun tarkistaminen tapahtui tehtävänannon mukaisesti osoitteesta: https://validator.w3.org/nu/#file
+
+Tässä oli tärkeää ymmärtää hakea **virtuaalikoneen internet-selaimesta** kyseinen sivu, en ollut käyttänyt kyseistä sivua aikaisemmin, joten tässä meni hetki hahmottaessa. 
+
+Tarkistaminen tapahtui:
+* Validate by File Upload - välilehdestä klikkaamalla
+* Klikkasin sieltä "Browse"
+* Uusi File Upload -ikkuna aukesi jossa etenin etsimään oikean tiedoston klikkaamalla **home > publicsites > hattu.example.com > index.html**
+
+Ilokseni virheitä ei ollut alla olevan kuvan mukaisesti
+
+![lop](images/lop.png)
+
+_Ei virheitä_
+
+Lopuksi kuitenkin hieman aikaa vievää vääntöä loppuun, kun halusin vielä kokeilla lisätä kuvan ja väriä sivulle.
+
+![hhh](images/hhh.png)
+
+_Hieno hattu kuva lisätty_
+
+f) Anna esimerkit 'curl -I' ja 'curl' -komennoista. Selitä 'curl -I' muutamasta näyttämästä otsakkeesta (response header), mitä ne tarkoittavat.
+
+m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.
+
+o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
 
 
 ## Lähteet
@@ -168,6 +198,10 @@ Karvinen, T. 2025. Verkkosivu. _Linux-palvelimet_ Luettavissa: https://terokarvi
 Stack overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log Luettu: 05.09.2025
 
 Vahtera, P. 2018. Verkkosivu. _HTML5 ja Web-sivun rakenne_ Luettavissa: https://punomo.fi/html5-ja-web-sivun-rakenne/
-Luettu: 05.09.2025.
+Luettu: 06.09.2025.
 
-http://sumologic.com/blog/apache-access-log
+http://sumologic.com/blog/apache-access-log Luettu: 06.09.2025.
+
+https://kirjat.it.jyu.fi/linkki/nettisivut_ohjelmointi/html.html Luettu: 06.09.2025.
+
+Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i Viitattu 7.9.2025
