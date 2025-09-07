@@ -172,11 +172,11 @@ Lopuksi kuitenkin hieman aikaa vievää vääntöä loppuun, kun halusin vielä 
 
 _Hieno hattu kuva lisätty_
 
-f) Anna esimerkit 'curl -I' ja 'curl' -komennoista. Selitä 'curl -I' muutamasta näyttämästä otsakkeesta (response header), mitä ne tarkoittavat.
+# f) Anna esimerkit 'curl -I' ja 'curl' -komennoista. Selitä 'curl -I' muutamasta näyttämästä otsakkeesta (response header), mitä ne tarkoittavat.
 
-m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.
+# m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.
 
-o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
+# o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
 
 
 ## Lähteet
