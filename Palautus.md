@@ -124,11 +124,11 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 ![hh](images/hh.png)
 
-- Kuten kuvassa ilmenee, **"curl: (6) Could not resolve host: curl http://hattu.example.com.**
+- Kuten kuvassa ilmenee, **"curl: (6) Could not resolve host: curl http://hattu.example.com.** Apache oli kuitenkin konfiguroitu ja oli aktiivisena.
 
-- Kävin läpi Heinosen (2025) ohjeet uudelleen, jossa ilmenikin yksi kohta, jonka olin tunnilla unohtanut olevan tarpeen tehdä. Apache oli kuitenkin konfiguroitu ja oli aktiivisena.
+- Kävin läpi Heinosen (2025) ohjeet uudelleen, jossa ilmenikin yksi kohta, jonka olin tunnilla unohtanut olevan tarpeen tehdä. 
  
-- `/etc/hosts-tiedostoon piti käydä lisäämässä rivi (eli kohdistamaan hostname IP-osoitteeseen) alla olevan kuvan mukaisesti.
+- `/etc/hosts`-tiedostoon piti käydä lisäämässä rivi (eli kohdistamaan hostname IP-osoitteeseen) alla olevan kuvan mukaisesti.
 
 ![et](images/et.png)
 
