@@ -96,10 +96,12 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
   
 - `sudoedit /etc/apache2/sites-available/hattu.example.conf`
 
+![edi](images/edi.png)
+
+
 ![ha](images/ha.png)
+_Apache konfiguraation sisältö_
 
-
-![kay](images/kay.png)
 
 5. Enabloin vielä web-palvelimen seuraavasti edeten:
 
