@@ -168,7 +168,7 @@ _Ei virheitä_
 
 Lopuksi kuitenkin hieman aikaa vievää vääntöä loppuun, kun halusin vielä kokeilla lisätä kuvan ja väriä sivulle.
 
-![hhh](images/hhh.png)
+![loppu](images/loppu.png)
 
 _Hieno hattu kuva lisätty_
 
