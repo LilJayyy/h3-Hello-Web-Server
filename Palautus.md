@@ -56,65 +56,74 @@ Suoritin alla olevan komennon Terminalissa:
 
 
 # c) Etusivun uusiminen - uusi name based virtual host 
-Lähdin tehtävänannon mukaisesti luomaan uuden name-based virtual hostin. Ideana on että sivu näkyy suoraan palvelimen etusivulla (http://localhost/).
 
-Käytin tässä tehävässä apuna Karvisen (2018) ohjetta.
+Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (2009) ohjeita.
 
-* `sudoedit /etc/apache2/sites-available/starwars.conf`
+1. Disabloidaan ensin vanha web-palvelin `kilppari.com`:
+
+- `sudo a2dissite kilppari.example.com`
+
+![dis](images/dismic.png)
+
+2. Hakemiston/kansion luominen ensin kotihakemistoon ja web-sivun sisällön kirjoitus index.html tiedostoon micro-editorilla. 
+
+- `mkdir -p hattu.example.com`
+ 
+- `micro hattu.example.com/index.html`
+
+
+![dis](images/dismic.png)
+
+3. Tässä kohtaa aloitin kirjoittamaan web-palvelimen/sivun sisältöä.
+Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin luullen, että kirjoittaa Apache-konfiguraatiota tässä kohtaa.
+
+ - micro hattu.example.com/index.html` -komennolla kirjoitetaan siis web-sivun sisältö, eli:
+
+**<html>** -Juurielimentti, www-sivun aloittava tagi. Kertoo selaimelle sen olevan HTML-tiedosto.
+**<head>** -Pääosa, headeri. Määritellään otsikko web-palvelimelle/sivulle.
+**<title>** -Otsikko selaimen ikkunassa 
+**<body>** -Sivurungon aloittava tagi
+**<p>** -Kappaleen vaihto
+
+![hat](images/hat.png)
+
+- Lopuksi vielä ctrl + S ja ctrl + Q
   
-* `cat /etc/apache2/sites-available/starwars.com.conf`
-  
-<VirtualHost *:80>
-
- ServerName kilppari.com
- 
- ServerAlias www.kilppari.com
- 
- DocumentRoot /home/liljas/publicsites/kilppari.com
- 
- <Directory /home/liljas/publicsites/kilppari.com>
- 
-   Require all granted
+4. Lähdin sitten Apachen konfiguraation pariin seuraavasti edeten:
    
- </Directory>
- 
-</VirtualHost>
+- `cd /etc/apache2/sites-available/`
+  
+- `sudoedit /etc/apache2/sites-available/hattu.example.conf`
 
-* `sudo a2ensite kilppari.com`
+![ha](images/ha.png)
+
+
+![kay](images/kay.png)
+
+5. Enabloin vielä web-palvelimen seuraavasti edeten:
+
+* `sudo a2ensite hattu.example.com`
  
 * `sudo systemctl restart apache2`
 
-Alla oleva virhetilanne tuli sinä kohtaa kun syötin komennon ´curl -H 'Host: kilppari.com' localhost`
+6. Lopuksi vielä testasin avaamalla verkkoselaimen:
+   
+- `hattu.example.com`
 
+- `curl hattu.example.com`
 
-![for](images/for.png)
+**Virhetilanne** 
 
+![hh](images/hh.png)
 
-**_Virhetilanne_**
+- Kuten kuvassa ilmenee, **"curl: (6) Could not resolve host: curl http://hattu.example.com.**
 
-Lähdin selvittämään ja korjaamaan tilanteen alla olevilla toimenpiteillä. Tässä kohtaa kello olikin jo tovin (21:30), sillä jäin selvittelemään mistä vika voisi johtua.
+- Kävin läpi Heinosen (2025) ohjeet uudelleen, jossa ilmenikin yksi kohta, jonka olin tunnilla unohtanut olevan tarpeen tehdä. Apache oli kuitenkin konfiguroitu ja oli aktiivisena.
+ 
+- `/etc/hosts-tiedostoon piti käydä lisäämässä rivi (eli kohdistamaan hostname IP-osoitteeseen) alla olevan kuvan mukaisesti.
 
+![et](images/et.png)
 
-* `chmod ugo+x /home/liljas/publicsites/kilppari.com`
-  
-Yllä oleva komento myöntää pääsyoikeuden hakemistoon, mikä näin ollen korjasi "Forbidden"-virhetilanteen
-
- ![mo](images/mo.png)
-
-
-
-* `sudo nano /etc/hosts/` - komennolla avasin tiedoston sillä selain näytti tyhjää.
-*  `127.0.0.1 kilppari.com www.kilppari.com` Lisäsin host-nimen loppuosaan
-* Tallensin vielä Ctrl + O ja Enter -tässä oli tärkeä huomioida, että root-oikeudet tarvittiin. (sudo nano)
-
-`curl -H 'Host: kilppari.com' localhost` -komento oli onneksi nyt responsiivinen.
-
-![ec](images/ec.png)
-
-
-
-![cur](images/cur.png)
-_pyydetään koneen palvelimelta sivuston sisältö_
 
 **Lopputulos**
 
@@ -127,9 +136,21 @@ _Onnistuminen_
 
 # e) Validin HTML5 -sivun luominen
 
+<html>
+	<head>
+	<title> Tervetuloa Hattulaan! </title>
+	</head>
+	<body>
+		<h1>Hatussa on hyvä olla</h1>
+		<p> Hattu pattu hattu pattu </p>
+	</body>
+</html>	
 
 
 ## Lähteet
+
+Fritsch S. 2009. Verkkosivu. _Ubuntu manuals_ Luettavissa: https://manpages.ubuntu.com/manpages/questing/en/man8/a2ensite.8.html Luettu: 05.09.2025.
+
 Linuxize. 2023. Artikkeli. _Chown Command in Linux (File Ownership)_ Luettavissa: https://linuxize.com/post/linux-chown-command/ Luettu 05.09.2025
 
 Girvin, D. 2025. Artikkeli. _Understanding the Apache access log: how to view, locate, and analyze_ Luettavissa:  https://www.sumologic.com/blog/apache-access-log Luettu 05.09.2025.
@@ -144,3 +165,7 @@ Karvinen, T. 2025. Verkkosivu. _Linux-palvelimet_ Luettavissa: https://terokarvi
 
 Stack overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log Luettu: 05.09.2025
 
+Vahtera, P. 2018. Verkkosivu. _HTML5 ja Web-sivun rakenne_ Luettavissa: https://punomo.fi/html5-ja-web-sivun-rakenne/
+Luettu: 05.09.2025.
+
+http://sumologic.com/blog/apache-access-log
