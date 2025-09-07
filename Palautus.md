@@ -137,7 +137,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 **Lopputulos**
 
-![lop](images/lop.png)
+![loppu](images/loppu.png)
 
 _Onnistunut uusi etusivu_
 
