@@ -59,7 +59,7 @@ Suoritin alla olevan komennon Terminalissa:
 
 Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (2009) ohjeita.
 
-1. Disabloidaan ensin vanha web-palvelin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä:
+1. Poistin vanhan virtual hostin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä komennoilla:
 
 - `sudo a2dissite kilppari.example.com`
   
@@ -67,7 +67,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 ![dis](images/dis.png)
 
-2. Hakemiston/kansion luominen ensin kotihakemistoon ja web-sivun sisällön kirjoitus index.html tiedostoon micro-editorilla. 
+2. Loin uuden kansion kotihakemistoon ja kirjoitin web-sivun sisällön index.html tiedostoon micro-editorilla.
 
 - `mkdir -p hattu.example.com`
  
@@ -76,7 +76,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 ![luo](images/luo.png)
 
-3. Tässä kohtaa aloitin kirjoittamaan web-palvelimen/sivun sisältöä.
+3. Aloitin kirjoittamaan web-sivun sisältöä.
 
 Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin luullen, että kirjoittaa Apache-konfiguraatiota tässä kohtaa.
 
@@ -84,7 +84,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 **< meta charset="UTF-8" >** -Suomenkieliset merkit näkyviin
 
-**< html >** - Juurielimentti, www-sivun aloittava tagi. Kertoo selaimelle sen olevan HTML-tiedosto
+**< html >** - Juurielimentti, www-sivun aloittava tagi. Kertoo selaimelle että tiedosto on HTML.
 
 **< head >** - Pääosa, headeri. Määritellään otsikko web-palvelimelle/sivulle
 
@@ -98,7 +98,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 - Lopuksi vielä ctrl + S ja ctrl + Q
   
-4. Lähdin sitten Apachen konfiguraation pariin seuraavasti edeten:
+4. Lähdin Apachen konfiguraation pariin syöttämällä komennot 
    
 - `cd /etc/apache2/sites-available/`
   
@@ -110,13 +110,13 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 ![ha](images/ha.png)
 
 
-5. Enabloin vielä web-palvelimen seuraavasti edeten:
+5. Otin käyttöön web-sivuston ja käynnistin Apachen uudelleen seuraavasti edeten:
 
 * `sudo a2ensite hattu.example.com`
  
 * `sudo systemctl restart apache2`
 
-6. Lopuksi vielä testasin avaamalla verkkoselaimen:
+6. Lopuksi vielä testasin avaamalla verkkoselaimen ja käytin curl -komentoa:
    
 - `hattu.example.com`
 
@@ -126,7 +126,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 ![hh](images/hh.png)
 
-- Kuten kuvassa ilmenee, **"curl: (6) Could not resolve host: curl http://hattu.example.com.** Apache oli kuitenkin konfiguroitu ja oli aktiivisena.
+- Kuten kuvassa ilmenee, `curl http://hattu.example.com` komennolla tuli virheilmoitus **"curl: (6) Could not resolve host: curl http://hattu.example.com.** Apache oli kuitenkin konfiguroitu ja oli aktiivinen
 
 - Kävin läpi Heinosen (2025) ohjeet uudelleen, jossa ilmenikin yksi kohta, jonka olin tunnilla unohtanut olevan tarpeen tehdä. 
  
@@ -142,15 +142,6 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 # e) Validin HTML5 -sivun luominen
 
-<html>
-	<head>
-	<title> Tervetuloa Hattulaan! </title>
-	</head>
-	<body>
-		<h1>Hatussa on hyvä olla</h1>
-		<p> Hattu pattu hattu pattu </p>
-	</body>
-</html>	
 
 
 ## Lähteet
