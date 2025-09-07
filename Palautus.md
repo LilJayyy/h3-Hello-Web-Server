@@ -75,7 +75,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 ![luo](images/luo.png)
 
 3. Tässä kohtaa aloitin kirjoittamaan web-palvelimen/sivun sisältöä.
-4. 
+
 Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin luullen, että kirjoittaa Apache-konfiguraatiota tässä kohtaa.
 
  - micro hattu.example.com/index.html` -komennolla kirjoitetaan siis web-sivun sisältö, eli:
