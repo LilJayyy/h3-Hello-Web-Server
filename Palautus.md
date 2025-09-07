@@ -63,7 +63,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 - `sudo a2dissite kilppari.example.com`
 
-![dis](images/dismic.png)
+![dis](images/dis.png)
 
 2. Hakemiston/kansion luominen ensin kotihakemistoon ja web-sivun sisällön kirjoitus index.html tiedostoon micro-editorilla. 
 
@@ -72,9 +72,10 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 - `micro hattu.example.com/index.html`
 
 
-![dis](images/dismic.png)
+![luo](images/luo.png)
 
 3. Tässä kohtaa aloitin kirjoittamaan web-palvelimen/sivun sisältöä.
+4. 
 Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin luullen, että kirjoittaa Apache-konfiguraatiota tässä kohtaa.
 
  - micro hattu.example.com/index.html` -komennolla kirjoitetaan siis web-sivun sisältö, eli:
