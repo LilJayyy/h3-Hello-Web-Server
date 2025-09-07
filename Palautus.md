@@ -162,7 +162,7 @@ Tarkistaminen tapahtui:
 
 Ilokseni virheitä ei ollut alla olevan kuvan mukaisesti
 
-![lop](images/lop.png)
+![ok](images/ok.png)
 
 _Ei virheitä_
 
@@ -172,9 +172,14 @@ Lopuksi kuitenkin hieman aikaa vievää vääntöä loppuun, kun halusin vielä 
 
 _Hieno hattu kuva lisätty_
 
+
 # f) Anna esimerkit 'curl -I' ja 'curl' -komennoista. Selitä 'curl -I' muutamasta näyttämästä otsakkeesta (response header), mitä ne tarkoittavat.
 
+
+
 # m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.
+
+
 
 # o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
 
@@ -183,25 +188,25 @@ _Hieno hattu kuva lisätty_
 
 Fritsch S. 2009. Verkkosivu. _Ubuntu manuals_ Luettavissa: https://manpages.ubuntu.com/manpages/questing/en/man8/a2ensite.8.html Luettu: 05.09.2025.
 
-Linuxize. 2023. Artikkeli. _Chown Command in Linux (File Ownership)_ Luettavissa: https://linuxize.com/post/linux-chown-command/ Luettu 05.09.2025
-
 Girvin, D. 2025. Artikkeli. _Understanding the Apache access log: how to view, locate, and analyze_ Luettavissa:  https://www.sumologic.com/blog/apache-access-log Luettu 05.09.2025.
 
-The Apache Software Foundation. 2023. Artikkeli. _Name-based Virtual Host Support_ Luettavissa: https://httpd.apache.org/docs/2.4/vhosts/name-based.html Luettu: 
-
 Heinonen, J. 2025. Artikkeli. _Apache2_ Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md Luettu: 03.09.2025.
+
+Jyväskylän Yliopisto. 2012. E-Kirja. _Ohjelmointi_ 2012. Luettavissa: https://kirjat.it.jyu.fi/linkki/nettisivut_ohjelmointi/html.html Luettu: 06.09.2025.
 
 Karvinen, T. 2018. Artikkeli. _Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address_ Luettavissa: https://terokarvinen.com/2018/04/10/name-based-virtual-hosts-on-apache-multiple-websites-to-single-ip-address/ Luettu: 05.09.2025.
 
 Karvinen, T. 2025. Verkkosivu. _Linux-palvelimet_ Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu 05.09.2025.
 
-Stack overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log Luettu: 05.09.2025
+Linuxize. 2023. Artikkeli. _Chown Command in Linux (File Ownership)_ Luettavissa: https://linuxize.com/post/linux-chown-command/ Luettu 05.09.2025.
+
+Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i Viitattu 7.9.2025.
+
+Stack Overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log Luettu: 05.09.2025
+
+The Apache Software Foundation. 2023. Artikkeli. _Name-based Virtual Host Support_ Luettavissa: https://httpd.apache.org/docs/2.4/vhosts/name-based.html Luettu: 05.09.2025.
 
 Vahtera, P. 2018. Verkkosivu. _HTML5 ja Web-sivun rakenne_ Luettavissa: https://punomo.fi/html5-ja-web-sivun-rakenne/
 Luettu: 06.09.2025.
 
-http://sumologic.com/blog/apache-access-log Luettu: 06.09.2025.
 
-https://kirjat.it.jyu.fi/linkki/nettisivut_ohjelmointi/html.html Luettu: 06.09.2025.
-
-Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i Viitattu 7.9.2025
