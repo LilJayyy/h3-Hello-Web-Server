@@ -80,17 +80,17 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin luullen, että kirjoittaa Apache-konfiguraatiota tässä kohtaa.
 
-* micro hattu.example.com/index.html` -komennolla kirjoitetaan siis web-sivun sisältö, eli:
+* `micro hattu.example.com/index.html` -komennolla kirjoitetaan siis web-sivun sisältö, eli:
 
-**<html>** Juurielimentti, www-sivun aloittava tagi. Kertoo selaimelle sen olevan HTML-tiedosto
+* **<html>** - Juurielimentti, www-sivun aloittava tagi. Kertoo selaimelle sen olevan HTML-tiedosto
 
-**<head>** Pääosa, headeri. Määritellään otsikko web-palvelimelle/sivulle
+* **<head>** - Pääosa, headeri. Määritellään otsikko web-palvelimelle/sivulle
 
-**<title>** Otsikko selaimen ikkunassa 
+* **<title>** - Otsikko selaimen ikkunassa 
 
-**<body>** Sivurungon aloittava tagi
+* **<body>** - Sivurungon aloittava tagi
 
-**<p>** Kappaleen vaihto
+* **<p>** - Kappaleen vaihto
 
 ![hat](images/hat.png)
 
