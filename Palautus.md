@@ -82,6 +82,8 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 * `micro hattu.example.com/index.html` -komennolla kirjoitetaan siis **web-sivun sisältö**, eli:
 
+**< meta charset="UTF-8" >** -Suomenkieliset merkit näkyviin
+
 **< html >** - Juurielimentti, www-sivun aloittava tagi. Kertoo selaimelle sen olevan HTML-tiedosto
 
 **< head >** - Pääosa, headeri. Määritellään otsikko web-palvelimelle/sivulle
@@ -92,7 +94,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 **< p >** - Kappaleen vaihto
 
-![hat](images/hat.png)
+![pat](images/pat.png)
 
 - Lopuksi vielä ctrl + S ja ctrl + Q
   
@@ -136,10 +138,6 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 **Lopputulos**
 
 
-Karvisen (2025) ohjeissa luki selkeästi "Vinkit" -osiossa kotisivu kielletty -(403 Forbidden) virhetilanteen korjaava komento. Toki tämä jäi huomaamatta - mutta sentään se tuli havaittua lopulta. 
-
-![onn](images/onn.png)
-_Onnistuminen_
 
 
 # e) Validin HTML5 -sivun luominen
