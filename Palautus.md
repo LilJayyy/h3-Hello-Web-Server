@@ -106,7 +106,6 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 
 ![ha](images/ha.png)
-_Apache konfiguraation sisältö_
 
 
 5. Enabloin vielä web-palvelimen seuraavasti edeten:
