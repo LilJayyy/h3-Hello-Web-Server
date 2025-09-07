@@ -62,6 +62,8 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 1. Disabloidaan ensin vanha web-palvelin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä:
 
 - `sudo a2dissite kilppari.example.com`
+  
+- `systemctl reload apache2`
 
 ![dis](images/dis.png)
 
