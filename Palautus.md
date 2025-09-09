@@ -152,7 +152,7 @@ _Onnistunut uusi etusivu_
 
 Jatkoin raportin tekoa 7.9.2025 kello 17:30 aikaan. 
 
-Pääsin suht helpolla tässä tehtävänosassa, sillä löysin hyvän oppimateriaalin Jyväskylän yliopiston verkkosivuilta (2012) josta katsoin ohjeet oikeaoppisen HTML5-sivun sisällön tekoon.
+Pääsin jokseenkin helpolla tässä tehtävänosassa, sillä löysin hyvän oppimateriaalin Jyväskylän yliopiston verkkosivuilta (2012) josta katsoin ohjeet oikeaoppisen HTML5-sivun sisällön tekoon.
 
 Validin HTML5 -sivun tarkistaminen tapahtui tehtävänannon mukaisesti osoitteesta: https://validator.w3.org/nu/#file
 
