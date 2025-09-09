@@ -5,6 +5,9 @@
 * [a) Apache-weppipalvelimen testaus](#a-apache-weppipalvelimen-testaus)
 * [b) Lokien analysointi](#b-lokien-analysointi)
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
+* [e) Validin HTML5 -sivun luominen](#e-Validin-HTML5-sivun-luominen)
+* [f) Esimerkit 'curl -I' ja 'curl' -komennoista](#Esimerkit-'curl-I'-ja-'curl--komennoista)
+
 
 
 ### Koneen tekniset tiedot
@@ -173,18 +176,53 @@ Lopuksi kuitenkin hieman aikaa vievää vääntöä loppuun, kun halusin vielä 
 _Hieno hattu kuva lisätty_
 
 
-# f) Anna esimerkit 'curl -I' ja 'curl' -komennoista. Selitä 'curl -I' muutamasta näyttämästä otsakkeesta (response header), mitä ne tarkoittavat.
+# f) Esimerkit 'curl -I' ja 'curl' -komennoista.
+
+Siirryin tämän tehtäväosion pariin 9.9.2025 kello 20:41. Curl -komentoa olin jo kerennyt aiemmin käyttää, joten perehdyin hieman tarkemmin sen merkitykseen. 
+
+Tässä tehtävänosiossa käytin apuna Digital Oceanin (2022) ohjeistusta, sekä Mozillan (2023) ohjeistusta.
+
+**`curl`** on komentorivityökalu, jolla lähetetään HTTP-pyyntöjä ja vastaanotetaan vastauksia. Kun komento syötetään, verkkosivun HTML-sisältö tulostuu komentoriville.
+
+  
+![cu](images/cu.png)
+
+_Onnistunut HTML-sisällön tulostuminen curl-komennolla_
 
 
+**curl -I** komennolla tulostetaan HTTP-sivun headerit(otsikot), mikä auttaa vianmäärityksessä. Pyynnössä palvelimelta tulee siis vain headerit sivulta.
 
-# m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti.
+ ![l](images/l.png)
+ _curl-l komennon vastaus_
 
+**response header otsakkeiden analyysi**
+
+**HTTP/1.1 200** -Pyyntö oli onnistunut
+
+**Date** -Aikaleima jolloin viesti on alunperin vastaanotettu
+
+**Server** -Sisältää tiedot palvelimen ohjelmistosta, joka käsittelyt pyynnön.
+
+**Last-Modified** -Viimeisin päivä jolloin resurssia muokattu
+
+**ETag** -Uniikki tunnus jolla identifioidaan palvelimen lähteen versio
+
+**Accept-Ranges** -Kertoo jos palvelin tukee osittaisia pyyntöjä, ja jos tukee niin mitä yksikköjä (esim. tavut) voi pyytää
+
+**Vary** -Päättelee, miten yhdistää pyyntö headerilta, jotta voidaan päättää, voiko välimuistissa olevaa vastausta käyttää vai pitääkö pyytää uusi alkuperäiseltä palvelimelta
+
+**Content-Type** -Päättelee resurssin mediatyypin
+
+
+# m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti. 
 
 
 # o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
 
 
 ## Lähteet
+
+https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl
 
 Fritsch S. 2009. Verkkosivu. _Ubuntu manuals_ Luettavissa: https://manpages.ubuntu.com/manpages/questing/en/man8/a2ensite.8.html Luettu: 05.09.2025.
 
