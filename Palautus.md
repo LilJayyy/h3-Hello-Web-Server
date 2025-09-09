@@ -198,21 +198,21 @@ _Onnistunut HTML-sisällön tulostuminen curl-komennolla_
 
 **response header otsakkeiden analyysi**
 
-**HTTP/1.1 200** - Pyyntö oli onnistunut
+* **HTTP/1.1 200** - Pyyntö oli onnistunut
 
-**Date** - Aikaleima jolloin viesti on alunperin vastaanotettu
+* **Date** - Aikaleima jolloin viesti on alunperin vastaanotettu
 
-**Server** - Sisältää tiedot palvelimen ohjelmistosta, joka käsittelyt pyynnön.
+* **Server** - Sisältää tiedot palvelimen ohjelmistosta, joka käsittelyt pyynnön.
 
-**Last-Modified** - Viimeisin päivä jolloin resurssia muokattu
+* **Last-Modified** - Viimeisin päivä jolloin resurssia muokattu
 
-**ETag** - Uniikki tunnus jolla identifioidaan palvelimen lähteen versio
+* **ETag** - Uniikki tunnus jolla identifioidaan palvelimen lähteen versio
 
-**Accept-Ranges** - Kertoo jos palvelin tukee osittaisia pyyntöjä, ja jos tukee niin mitä yksikköjä (esim. tavut) voi pyytää
+* **Accept-Ranges** - Kertoo jos palvelin tukee osittaisia pyyntöjä, ja jos tukee niin mitä yksikköjä (esim. tavut) voi pyytää
 
-**Vary** - Päättelee, miten yhdistää pyyntö headerilta, jotta voidaan päättää, voiko välimuistissa olevaa vastausta käyttää vai pitääkö pyytää uusi alkuperäiseltä palvelimelta
+* **Vary** - Päättelee, miten yhdistää pyyntö headerilta, jotta voidaan päättää, voiko välimuistissa olevaa vastausta käyttää vai pitääkö pyytää uusi alkuperäiseltä palvelimelta
 
-**Content-Type** - Päättelee resurssin mediatyypin
+* **Content-Type** - Päättelee resurssin mediatyypin
 
 
 # m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti. 
