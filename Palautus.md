@@ -5,8 +5,8 @@
 * [a) Apache-weppipalvelimen testaus](#a-apache-weppipalvelimen-testaus)
 * [b) Lokien analysointi](#b-lokien-analysointi)
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
-* [e) Validin HTML5 -sivun luominen](#e-Validin-HTML5-sivun-luominen)
-* [f) Esimerkit 'curl -I' ja 'curl' -komennoista](#Esimerkit-'curl-I'-ja-'curl--komennoista)
+* [e) Validin HTML5 -sivun luominen](#e-validin-html5-sivun-luominen)
+* [f) Esimerkit 'curl -I' ja 'curl' -komennoista](#f-esimerkit-curl--i-ja-curl--komennoista)
 
 
 
