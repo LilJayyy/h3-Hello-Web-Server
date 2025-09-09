@@ -182,7 +182,7 @@ Siirryin tämän tehtäväosion pariin 9.9.2025 kello 20:41. Curl -komentoa olin
 
 Tässä tehtävänosiossa käytin apuna Digital Oceanin (2022) ohjeistusta, sekä Mozillan (2023) ohjeistusta.
 
-**`curl`** on komentorivityökalu, jolla lähetetään HTTP-pyyntöjä ja vastaanotetaan vastauksia. Kun komento syötetään, verkkosivun HTML-sisältö tulostuu komentoriville.
+1. **`curl`** on komentorivityökalu, jolla lähetetään HTTP-pyyntöjä ja vastaanotetaan vastauksia. Kun komento syötetään, verkkosivun HTML-sisältö tulostuu komentoriville.
 
   
 ![cu](images/cu.png)
@@ -190,28 +190,29 @@ Tässä tehtävänosiossa käytin apuna Digital Oceanin (2022) ohjeistusta, sek�
 _Onnistunut HTML-sisällön tulostuminen curl-komennolla_
 
 
-**curl -I** komennolla tulostetaan HTTP-sivun headerit(otsikot), mikä auttaa vianmäärityksessä. Pyynnössä palvelimelta tulee siis vain headerit sivulta.
+2. **curl -I** komennolla tulostetaan HTTP-sivun headerit(otsikot), mikä auttaa vianmäärityksessä. Pyynnössä palvelimelta tulee siis vain headerit sivulta.
 
  ![l](images/l.png)
+ 
  _curl-l komennon vastaus_
 
 **response header otsakkeiden analyysi**
 
-**HTTP/1.1 200** -Pyyntö oli onnistunut
+**HTTP/1.1 200** - Pyyntö oli onnistunut
 
-**Date** -Aikaleima jolloin viesti on alunperin vastaanotettu
+**Date** - Aikaleima jolloin viesti on alunperin vastaanotettu
 
-**Server** -Sisältää tiedot palvelimen ohjelmistosta, joka käsittelyt pyynnön.
+**Server** - Sisältää tiedot palvelimen ohjelmistosta, joka käsittelyt pyynnön.
 
-**Last-Modified** -Viimeisin päivä jolloin resurssia muokattu
+**Last-Modified** - Viimeisin päivä jolloin resurssia muokattu
 
-**ETag** -Uniikki tunnus jolla identifioidaan palvelimen lähteen versio
+**ETag** - Uniikki tunnus jolla identifioidaan palvelimen lähteen versio
 
-**Accept-Ranges** -Kertoo jos palvelin tukee osittaisia pyyntöjä, ja jos tukee niin mitä yksikköjä (esim. tavut) voi pyytää
+**Accept-Ranges** - Kertoo jos palvelin tukee osittaisia pyyntöjä, ja jos tukee niin mitä yksikköjä (esim. tavut) voi pyytää
 
-**Vary** -Päättelee, miten yhdistää pyyntö headerilta, jotta voidaan päättää, voiko välimuistissa olevaa vastausta käyttää vai pitääkö pyytää uusi alkuperäiseltä palvelimelta
+**Vary** - Päättelee, miten yhdistää pyyntö headerilta, jotta voidaan päättää, voiko välimuistissa olevaa vastausta käyttää vai pitääkö pyytää uusi alkuperäiseltä palvelimelta
 
-**Content-Type** -Päättelee resurssin mediatyypin
+**Content-Type** - Päättelee resurssin mediatyypin
 
 
 # m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti. 
