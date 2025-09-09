@@ -223,7 +223,9 @@ _Onnistunut HTML-sisällön tulostuminen curl-komennolla_
 
 ## Lähteet
 
-https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl
+Digital Ocean. 2022. Artikkeli. _How to Download Files with cURL_  Luettavissa: https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl Luettu: 09.9.2025
+
+Mozilla Developer Network. 2023. Artikkeli. _HTTP headers_  Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers Luettu: 09.9.2025
 
 Fritsch S. 2009. Verkkosivu. _Ubuntu manuals_ Luettavissa: https://manpages.ubuntu.com/manpages/questing/en/man8/a2ensite.8.html Luettu: 05.09.2025.
 
@@ -239,7 +241,7 @@ Karvinen, T. 2025. Verkkosivu. _Linux-palvelimet_ Luettavissa: https://terokarvi
 
 Linuxize. 2023. Artikkeli. _Chown Command in Linux (File Ownership)_ Luettavissa: https://linuxize.com/post/linux-chown-command/ Luettu 05.09.2025.
 
-Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i Viitattu 7.9.2025.
+Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i Viitattu 07.9.2025.
 
 Stack Overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log Luettu: 05.09.2025
 
