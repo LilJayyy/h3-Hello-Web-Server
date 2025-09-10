@@ -36,8 +36,9 @@ Verkkotunnusten nimeä käyttää nimipohjaiset palvelimet. Kun pyyntö lähetet
 
 Palvelin katsoo IP-osoitteen ja portin saatuaan pyynnön. Useamman palvelimen ollessa Apache vertaa pyynnön palvelinnimeä (ServerName -ja ServerAlias) valiten oikean.
 
-2.  **Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address** 
-Apachella voi käyttää useampaa verkkotunnusta yhtä IP-osoitetta käyttäen. Samassa artikkelissa opetetaan lisäämään uusi nimipohjainen palvelin, web-palvelimen asennus ja määrittely, sekä verkkosivun luonti ilman sudo-oikeuksia. 
+2.  **Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address**
+   
+   Artikkelissa kerrotaan, että Apachella voi käyttää useampaa verkkotunnusta yhtä IP-osoitetta käyttäen. Samalla opetetaan lisäämään uusi nimipohjainen palvelin, web-palvelimen asennus ja määrittely, sekä verkkosivun luonti ilman sudo-oikeuksia. 
 
 
 # a) Apache-weppipalvelimen testaus
