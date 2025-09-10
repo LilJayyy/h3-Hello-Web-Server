@@ -286,7 +286,7 @@ Sain huokaista helpotuksesta - sillä jokainen web-sivu aukesi odotetusti.
 
 **Lopputulos** 
 
- ![lop](images/lop.png)
+ ![je](images/je.png)
 
 * `localhost`
   
