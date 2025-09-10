@@ -67,7 +67,7 @@ Suoritin alla olevan komennon Terminalissa:
 
 Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (2009) ohjeita.
 
-1. Poistin vanhan virtual hostin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä komennoilla:
+**1.** Poistin vanhan virtual hostin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä komennoilla:
 
 - `sudo a2dissite kilppari.com` 
   
@@ -75,7 +75,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 ![dis](images/dis.png)
 
-2. Loin uuden kansion kotihakemistoon ja kirjoitin web-sivun sisällön index.html tiedostoon micro-editorilla.
+**2.** Loin uuden kansion kotihakemistoon ja kirjoitin web-sivun sisällön index.html tiedostoon micro-editorilla.
 
 - `mkdir -p hattu.example.com`
  
@@ -84,7 +84,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 ![luo](images/luo.png)
 
-3. Aloitin kirjoittamaan web-sivun sisältöä.
+**3.** Aloitin kirjoittamaan web-sivun sisältöä.
 
 Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin luullen, että kirjoittaa Apache-konfiguraatiota tässä kohtaa.
 
@@ -106,7 +106,7 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 
 - Lopuksi vielä ctrl + S ja ctrl + Q
   
-4. Lähdin Apachen konfiguraation pariin syöttämällä komennot 
+**4.** Lähdin Apachen konfiguraation pariin syöttämällä komennot 
    
 - `cd /etc/apache2/sites-available/`
   
@@ -118,13 +118,13 @@ Oli tärkeää havaita mitä asiaa tein - sillä voi helposti mennä sekaisin lu
 ![ha](images/ha.png)
 
 
-5. Otin käyttöön web-sivuston ja käynnistin Apachen uudelleen seuraavasti edeten:
+**5.** Otin käyttöön web-sivuston ja käynnistin Apachen uudelleen seuraavasti edeten:
 
 * `sudo a2ensite hattu.example.com`
  
 * `sudo systemctl restart apache2`
 
-6. Lopuksi vielä testasin avaamalla verkkoselaimen ja käytin curl -komentoa:
+**6.** Lopuksi vielä testasin avaamalla verkkoselaimen ja käytin curl -komentoa:
    
 - `hattu.example.com`
 
