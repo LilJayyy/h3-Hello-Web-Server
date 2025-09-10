@@ -26,6 +26,19 @@
 
 # x) Artikkeli
 
+**Name-based Virtual Host Support**
+
+Artikkeli kertoo nimipohjaisista virtuaalipalvelimista. Alla kolme asiaa lueteltuna.
+
+Nimipohjaiset vs. IP-pohjaiset virtuaalipalvelimet
+IP-pohjaiset palvelimet tunnistetaan sen mukaan, mikä IP-osoite niillä on.
+Verkkotunnusten nimeä käyttää nimipohjaiset palvelimet. Kun pyyntö lähetetään Client (asiakas) toimesta, etsii se verkkotunnuksen nimellä IP-osoitteen sijaan.
+
+Palvelin katsoo IP-osoitteen ja portin saatuaan pyynnön. Useamman palvelimen ollessa Apache vertaa pyynnön palvelinnimeä (ServerName -ja ServerAlias) valiten oikean.
+
+**Teron artikkeli** 
+Apachella voi käyttää useampaa verkkotunnusta yhtä IP-osoitetta käyttäen. Samassa artikkelissa opetetaan lisäämään uusi nimipohjainen palvelin, web-palvelimen asennus ja määrittely, sekä verkkosivun luonti ilman sudo-oikeuksia. 
+
 
 # a) Apache-weppipalvelimen testaus
 
