@@ -26,7 +26,7 @@
 
 # x) Artikkeli
 
-** **Name-based Virtual Host Support**
+**Name-based Virtual Host Support**
 
 Artikkeli kertoo nimipohjaisista virtuaalipalvelimista. Alla kolme asiaa lueteltuna.
 
@@ -38,7 +38,7 @@ Artikkeli kertoo nimipohjaisista virtuaalipalvelimista. Alla kolme asiaa luetelt
   
 - Palvelin tarkistaa IP-osoitteen ja portin saatuaan pyynnön. Jos palvelimia on usempia - vertaa Apache pyynnön palvelinnimeä (ServerName -ja ServerAlias) valiten oikean.
 
-**  **Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address**
+**Name Based Virtual Hosts on Apache – Multiple Websites to Single IP Address**
    
 - Artikkelissa kerrotaan, että Apachella voi käyttää useampaa verkkotunnusta yhtä IP-osoitetta käyttäen.
   
