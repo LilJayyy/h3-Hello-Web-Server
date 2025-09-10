@@ -7,6 +7,11 @@
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
 * [e) Validin HTML5 -sivun luominen](#e-validin-html5-sivun-luominen)
 * [f) Esimerkit 'curl -I' ja 'curl' -komennoista](#f-esimerkit-curl--i-ja-curl--komennoista)
+* [m) GitHub Education -paketti](#m-github-education-paketti)
+* [o) Kaksi web-sivustoa sama palvelin](#o-kaksi-web-sivustoa-sama-palvelin)
+
+
+
 
 
 
@@ -64,7 +69,7 @@ Käytin tässä tehävässä apuna Karvisen (2018), Heinosen (2025) ja Fritsch (
 
 1. Poistin vanhan virtual hostin `kilppari.com` jonka kävin testimielessä tunnin jälkeen tekemässä komennoilla:
 
-- `sudo a2dissite kilppari.example.com`
+- `sudo a2dissite kilppari.com` 
   
 - `systemctl reload apache2`
 
@@ -215,19 +220,97 @@ _Onnistunut HTML-sisällön tulostuminen curl-komennolla_
 * **Content-Type** - Päättelee resurssin mediatyypin
 
 
-# m) Vapaaehtoinen, suosittelen tekemään: Hanki GitHub Education -paketti. 
+# m) GitHub Education -paketti
+
+Raportin tekeminen jatkui 10.9.2025 kello 14:57. Päätin asentaa Githubin Education -paketin.
+
+  ![ro](images/ro.png)
+
+  _Github Education -paketin hakemus_
+
+* Siirryin Github Educationin verkkosivuille
+  
+* Kirjauduin Peppiin ja latasin englanninkielisen opintotodistuksen (vasemman ylälaidan navigointipalkista) kohdasta "Opiskeluaikaiset todistukset".
+
+* Githubin hakemuslomakkeella valitsin todisteeksi alasvetovalikosta vaihtoehdon: "Enrollment letter" (opiskelutodistus).
+
+* Lopuksi lähetin hakemuksen painamalla "Submit" -painiketta.
+
+  ![ed](images/ed.png)
+
+_Onnistunut hakemuksen jättö_
 
 
-# o) Vapaaehtoinen, vaikea: Laita sama tietokone vastaamaan kahdellla eri sivulla kahdesta eri nimestä. Eli kaksi weppisiteä samalla koneelle, esim. foo.example.com ja bar.example.com. Voit simuloida nimipalvelun toimintaa hosts-tiedoston avulla.
+# o) Kaksi web-sivustoa sama palvelin 
 
+Päätin lähteä kokeilemaan viimeistä tehtävää edeten Karvisen (2018), Heinosen (2025) ja Stack Overflown (2012) ohjeilla.
+
+Tässä tehtävässä oli tarkoituksena luoda kaksi verkkosivustoa toimimaan samalla palvelimella. 
+
+Kerkesin jo hieman harjoitella luomalla muutamia eri web-sivustoja samaan tunnilla luotuun palvelimeen. Näin ollen päätin hyödyntää aiemmin luotua websivustoa, jonka olin poistanut käytöstä palvelimelta.
+
+Etenin seuraavasti:
+
+* `ls` - Komentoa etsimiseen
+
+- Seuraavaksi pohdin miten olemassaoleva web-sivusto löytyy palvelimelta. 
+
+* `ls /etc/apache2/sites-enabled/` - Tarkistin tällä komennolla mitkä sivustot oli käytössä - ei ollut käytössä. Ainoastaan äskettäin luotu tehtävänannon mukainen hattu.example.com web-sivu.
+
+* `ls /etc/apache2/sites-available/` - Tällä komennolla olemassa olevia, mutta käytöstä poistettuja web-sivustoja.
+
+  ![si](images/si.png)
+  
+_Web-sivustojen (virtual sites) etsintää hakemistoista_
+
+
+* `sudo nano /etc/hosts/` - Komennolla kävin lisäämässä IP-osoitteen ja web-sivuston nimen, olin sen varmaan jossakin kohdin poistanut.
+
+* `127.0.0.1 kilppari.com www.kilppari.com` lisäys ja lopuksi vielä tallensin (ctrl + O,  Enter) ja ctrl + X nano-editorin sulku.
+  - Apache palvelin **ohjasi** siis tällä toimenpiteellä kyseisen web-sivuston koneelleni.
+ 
+   ![si](images/si.png)
+  _IP-osoitteen ja web-sivuston nimen lisäystä_
+ 
+* `micro /home/liljas/publicsites/kilppari.com/index.html` - Komennolla micro-editori auki ja muokkasin hieman sivuston sisältöä ja lisäsin väriä.
+  - Otin käyttöön web-sivuston ja käynnistin Apachen uudelleen seuraavasti edeten:
+
+* `sudo a2ensite kilppari.com`
+  - Tulikin vastaus että "Already enabled"
+ 
+* `sudo systemctl restart apache2`
+
+Etenin viimeiseen kohtaan. Tässä kohtaa hieman jännitti, oliko kaikki mennyt hyvin.
+
+Sain huokaista helpotuksesta - sillä jokainen web-sivu aukesi odotetusti.
+
+**Lopputulos** 
+
+ ![lop](images/lop.png)
+
+* `localhost`
+  
+* `hattu.example.com`
+
+* `kilppari.com`
+
+Nyt useampi verkkosivu vastaa yhdelle IP-osoitteelle. Tehtävän palautus meni hieman viime tippaan ja palautan tehtävän 10.09.2025 kello 17.18. 
+
+Vaikka aikaa kului tähän raporttiin enemmän, tärkeintä oli ymmärrys ja harjoitus asioista, mitä olen ollut tekemässä.
 
 ## Lähteet
 
-Digital Ocean. 2022. Artikkeli. _How to Download Files with cURL_  Luettavissa: https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl Luettu: 09.9.2025
+Ask Ubuntu. 2013. Keskustelufoorumi. _How do I edit the /etc/hosts file? [duplicate]_ Luettavissa: https://askubuntu.com/questions/343514/how-do-i-edit-the-etc-hosts-file/ Luettu: 03.09.2025.
 
-Fritsch S. 2009. Verkkosivu. _Ubuntu manuals_ Luettavissa: https://manpages.ubuntu.com/manpages/questing/en/man8/a2ensite.8.html Luettu: 05.09.2025.
+Garuda Linux Forum. 2023. Keskustelufoorumi. _Mastering the Micro text editor_ Luettavissa: https://forum.garudalinux.org/t/mastering-the-micro-text-editor/32889 Luettu: 03.09.2025.
 
-Girvin, D. 2025. Artikkeli. _Understanding the Apache access log: how to view, locate, and analyze_ Luettavissa:  https://www.sumologic.com/blog/apache-access-log Luettu 05.09.2025.
+Digital Ocean. 2022. Artikkeli. _How to Download Files with cURL_  Luettavissa: https://www.digitalocean.com/community/tutorials/workflow-downloading-files-curl/ Luettu: 09.9.2025.
+
+Ephost. Verkkosivu. _How to edit your Host file_ Luettavissa: https://www.ephost.com/account/index.php/knowledgebase/232/how-to-edit-your-host-file.html/ Luettu: 03.09.2025.
+
+Fritsch S. 2009. Verkkosivu. _Ubuntu manuals_ Luettavissa: https://manpages.ubuntu.com/manpages/questing/en/man8/a2ensite.8.html/ Luettu: 05.09.2025.
+
+Girvin, D. 2025. Artikkeli. _Understanding the Apache access log: how to view, locate, and analyze_ Luettavissa: https://www.sumologic.com/blog/apache-access-log/ Luettu 05.09.2025.
 
 Heinonen, J. 2025. Artikkeli. _Apache2_ Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-03092025.md Luettu: 03.09.2025.
 
@@ -239,15 +322,16 @@ Karvinen, T. 2025. Verkkosivu. _Linux-palvelimet_ Luettavissa: https://terokarvi
 
 Linuxize. 2023. Artikkeli. _Chown Command in Linux (File Ownership)_ Luettavissa: https://linuxize.com/post/linux-chown-command/ Luettu 05.09.2025.
 
-Mozilla Developer Network. 2023. Artikkeli. _HTTP headers_  Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers Luettu: 09.9.2025
+Mozilla Developer Network. 2023. Artikkeli. _HTTP headers_  Luettavissa: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/ Luettu: 09.9.2025
 
-Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i Viitattu 07.9.2025.
+Sashkin. 2025. _Cylinder black top hat – silinterihattu_ Adobe Stock. Saatavissa: https://adobe.ly/3Zp9q3i/ Viitattu 07.9.2025.
 
-Stack Overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log Luettu: 05.09.2025
+Stack Overflow. 2012. _What is the difference between the 'sites-enabled' and 'sites-available' directory?_ Keskustelufoorumi. Luettavissa: https://stackoverflow.com/questions/21812360/what-is-the-difference-between-the-sites-enabled-and-sites-available-directo/ Luettu 10.09.2025.
 
-The Apache Software Foundation. 2023. Artikkeli. _Name-based Virtual Host Support_ Luettavissa: https://httpd.apache.org/docs/2.4/vhosts/name-based.html Luettu: 05.09.2025.
+Stack Overflow. 2022. _Understanding Apache's access log_ Luettavissa: https://stackoverflow.com/questions/9234699/understanding-apaches-access-log/ Luettu: 05.09.2025
 
-Vahtera, P. 2018. Verkkosivu. _HTML5 ja Web-sivun rakenne_ Luettavissa: https://punomo.fi/html5-ja-web-sivun-rakenne/
-Luettu: 06.09.2025.
+The Apache Software Foundation. 2023. Artikkeli. _Name-based Virtual Host Support_ Luettavissa: https://httpd.apache.org/docs/2.4/vhosts/name-based.html/ Luettu: 05.09.2025.
+
+Vahtera, P. 2018. Artikkeli. _HTML5 ja Web-sivun rakenne_ Luettavissa: https://punomo.fi/html5-ja-web-sivun-rakenne/ Luettu: 06.09.2025.
 
 
