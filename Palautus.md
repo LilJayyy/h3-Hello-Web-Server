@@ -47,7 +47,9 @@ Artikkeli kertoo nimipohjaisista virtuaalipalvelimista. Alla kolme asiaa luetelt
 
 # a) Apache-weppipalvelimen testaus
 
-Siirryin 5.9.2025 kello 19.52 tehtävän ensimmäiseen vaiheeseen eli testaamaan että webpalvein vastaa localhost-osoitteesta. Apache-webpalvelin oli keretty asentaa oppitunnilla. 
+Siirryin 5.9.2025 kello 19.52 tehtävän ensimmäiseen vaiheeseen eli testaamaan että webpalvein vastaa localhost-osoitteesta. 
+
+Apache-webpalvelin oli keretty asentaa oppitunnilla. 
 
 * Avasin virtuaalikoneen ja seuraavaksi internet-selaimen
 * syötin osoitekenttään: http://localhost
