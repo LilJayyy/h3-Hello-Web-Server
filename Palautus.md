@@ -181,7 +181,7 @@ Pääsin jokseenkin helpolla tässä tehtävänosassa, sillä löysin hyvän opp
 
 Validin HTML5 -sivun tarkistaminen tapahtui tehtävänannon mukaisesti osoitteesta: https://validator.w3.org/nu/#file
 
-Tässä oli tärkeää ymmärtää hakea **virtuaalikoneen internet-selaimesta** kyseinen sivu, en ollut käyttänyt kyseistä sivua aikaisemmin, joten tässä meni hetki hahmottaessa. 
+* Tässä oli tärkeää ymmärtää hakea **virtuaalikoneen internet-selaimesta** kyseinen sivu, en ollut käyttänyt kyseistä sivua aikaisemmin, joten tässä meni hetki hahmottaessa. 
 
 Tarkistaminen tapahtui:
 * Validate by File Upload - välilehdestä klikkaamalla
