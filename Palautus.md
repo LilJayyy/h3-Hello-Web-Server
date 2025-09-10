@@ -280,9 +280,7 @@ _Web-sivustojen (virtual sites) etsintää hakemistoista_
  
 * `sudo systemctl restart apache2`
 
-Etenin viimeiseen kohtaan. Tässä kohtaa hieman jännitti, oliko kaikki mennyt hyvin.
-
-Sain huokaista helpotuksesta - sillä jokainen web-sivu aukesi odotetusti.
+Etenin viimeiseen kohtaan. Tässä kohtaa hieman jännitti, oliko kaikki mennyt hyvin. Sain huokaista helpotuksesta - sillä jokainen web-sivu aukesi odotetusti.
 
 **Lopputulos** 
 
