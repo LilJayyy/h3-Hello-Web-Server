@@ -7,7 +7,7 @@
 * [c) Etusivun uusiminen - uusi name based virtual host](#c-etusivun-uusiminen---uusi-name-based-virtual-host)
 * [e) Validin HTML5 -sivun luominen](#e-validin-html5-sivun-luominen)
 * [f) Esimerkit 'curl -I' ja 'curl' -komennoista](#f-esimerkit-curl--i-ja-curl--komennoista)
-* [m) GitHub Education -paketti](#m-github-education-paketti)
+* [m) GitHub Education -paketti](#m-github-education--paketti)
 * [o) Kaksi web-sivustoa sama palvelin](#o-kaksi-web-sivustoa-sama-palvelin)
 
 
